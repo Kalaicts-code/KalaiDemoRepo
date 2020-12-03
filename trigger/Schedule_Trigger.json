@@ -1,0 +1,26 @@
+{
+	"name": "Schedule_Trigger",
+	"properties": {
+		"description": "Sample trigger for Schedule",
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "HourlyDataProcessed",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Hour",
+				"interval": 1,
+				"startTime": "2020-12-03T10:45:00",
+				"endTime": "2020-12-04T10:45:00",
+				"timeZone": "GMT Standard Time"
+			}
+		}
+	}
+}
